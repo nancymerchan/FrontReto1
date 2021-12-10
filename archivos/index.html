@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contra Entrega LTDA</title>
+    
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- MIS JS -->
+    <script src="resources/js/index.js"></script>
+    
+
+</head>
+
+<body>
+    <!-- MI NAV -->
+    <div class="miNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalRegistro">Registro</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalLogin">Login</button>
+                
+              </span>
+            </div>
+        </nav>
+    </div>
+    <!-- ***MI NAV -->
+    <!-- MI CABECERA -->
+   
+    <div class="miHeader">
+        <div class="jumbotron text-center">
+            <h1>CONTRA CORRIENTE LTDA</h1>
+                       
+            <p>CONTRA CORRIENTE LTDA</p>
+    
+        </div>
+    </div>
+    <!-- ***MI CABECERA -->
+    <!-- MI BODY -->
+    <div class="miBody">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>QUINES SOMOS</h3>
+                    <p>Empresa Barranquillera con más de 10 años de trayectoria en la
+                        venta de periféricos.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>UBICACION</h3>
+                    <p>CENTRO HISTÓRICO de la ciudad</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>ACTUALIDAD</h3>
+                    <p>Actualmente cuenta con más de 50 empleados entre directos y fuerza de ventas independiente.</p>
+                </div>
+            </div>
+        </div>
+        <!-- MIS MODALS -->
+        <!-- modal Registro -->
+        <div class="modal fade" id="myModalRegistro">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Registro</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="miFormRegistro">
+                        <label for="usr">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <label for="usr">Email:</label>
+                        <input type="text" class="form-control" id="mail" name="E-mail">
+                        <label for="usr">Password:</label>
+                        <input type="text" class="form-control" id="pwd" name="password">
+                        <label for="usr">Confirmación Password:</label>
+                        <input type="text" class="form-control" id="pwr_r" name="canfirmar password">
+                        <!-- MI ALERT -->
+                        <p style="color: blue;" class="alertaRegistro"></p>
+                        <button type="button" class="btn btn-primary btn_registrarse">Registrarse</button>
+                    </div>
+                </div>
+                <div class="confirmacionRegistro">
+                    <div class="alert alert-success">
+                        <strong>Bienvenid@!</strong> Te has registrado correctamente.
+                      </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        <!-- ***Fin Registro -->
+        <!-- modal Login -->
+        <div class="modal fade" id="myModalLogin">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="miFormLogin">
+                        <label for="usr">Usuario:</label>
+                        <input type="text" class="form-control" id="usr_login" name="usuario">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd_login" name="password">
+                        <!-- MI ALERT -->
+                        <p style="color: black;" class="alertaLogin"></p>
+                        <button type="button" class="btn btn-primary btn_login">Ingresar</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        <!-- ***Fin Login -->
+        <!-- ***MIS MODALS -->
+    </div>
+    <!-- ***MI BODY -->
+    <!-- MI FOOTER -->
+    <div class="miFooter">
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2020 Copyright:
+              <a class="text-dark" href="#">Creado Nancy Merchan Argenis Micaan</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <!-- ***MI FOOTER -->
+</body>
+</html>
